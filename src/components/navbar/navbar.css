@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #00828c;
+    color: white;
+}
+
+.logo{
+    font-size: 30px;
+    height: 150x;
+    width: 100px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.home,
+.about,
+.contact,
+.skills,
+.signup {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+.home:hover{
+    color:yellowgreen
+}
+
+.about:hover{
+    color:yellowgreen
+}
+
+.skills:hover{
+    color:yellowgreen
+}
+
+.contact:hover{
+    color:yellowgreen
+}
+
+.signup{
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+.signup:hover{
+    background-color: yellowgreen;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 780px){
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #005469;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .home,
+    .about,
+    .contact,
+    .signup,
+    .skills{
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .signup{
+        border: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: #00828c;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+        border: 20px solid white;
+        border-radius: 50px;
+    }
+}
